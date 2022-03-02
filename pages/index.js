@@ -42,7 +42,7 @@ export default function Homepage() {
         {/*  */}
         <MoviesContainer>
           <ContainerTitle>Based on your history</ContainerTitle>
-          <Wrap spacing="10px" textAlign="center" justify={"center"}>
+          <Wrap spacing="15px" textAlign="center" justify={"flex-start"}>
             {data.recMovies?.results?.map((movie) => (
               <MovieCard key={"movie.id"} movie={movie} />
             ))}
