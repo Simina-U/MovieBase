@@ -7,7 +7,6 @@ export default async function handleRecommended(req, res) {
   await dbConnect();
   const movieFromHistory = await History.aggregate().sample(1);
   const idFromHistoryMovie = movieFromHistory[0].id;
-  console.log(idFromHistoryMovie);
   const movieFromWatchlist = await Watchlist.aggregate().sample(1);
   const idFromWatchlistMovie = movieFromWatchlist[0].id;
 
@@ -29,7 +28,6 @@ export default async function handleRecommended(req, res) {
   const similarMovs = await fetcher(
     getSimilarToWatchlist(idFromWatchlistMovie)
   ); //no results as of 13.01
-  similarMovs.pop();
   const topRated = await fetcher(getTopRatedMovies());
   const upcomingMovies = await fetcher(getUpcomingMovies());
   const popularMovies = await fetcher(getPopularMovies());
