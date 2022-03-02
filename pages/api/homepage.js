@@ -29,6 +29,7 @@ export default async function handleRecommended(req, res) {
   const similarMovs = await fetcher(
     getSimilarToWatchlist(idFromWatchlistMovie)
   ); //no results as of 13.01
+  similarMovs.pop();
   const topRated = await fetcher(getTopRatedMovies());
   const upcomingMovies = await fetcher(getUpcomingMovies());
   const popularMovies = await fetcher(getPopularMovies());
