@@ -1,0 +1,47 @@
+{
+  "name": "dn-moviebase",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.2",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/inter": "4.2.2",
+    "emotion-theming": "11.0.0",
+    "fontsource-inter": "4.0.0",
+    "framer-motion": "^4.1.17",
+    "mongoose": "^6.1.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-scripts": "^5.0.0",
+    "swr": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  },
+  "description": "![movie.png](./docs/movie.png)",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simina-U/dn-moviebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simina-U/dn-moviebase/issues"
+  },
+  "homepage": "https://github.com/Simina-U/dn-moviebase#readme"
+}
